@@ -23,4 +23,5 @@ tiktoken
 requests
 neo4j
 selenium
+python-multipart
 python-dotenv
