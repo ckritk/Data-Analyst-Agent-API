@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 
 An **AI-powered API** that can **source, prepare, analyze, and visualize data** based on plain English instructions.  
-This project automates **end-to-end data analysis** — from fetching datasets to returning ready-to-use insights and visualizations — all in **under 3 minutes**.  
+This project automates **end-to-end data analysis** — from fetching datasets to returning ready-to-use insights and visualizations.  
 
 ---
 
