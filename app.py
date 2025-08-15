@@ -1,5 +1,6 @@
 import os
 import shutil
+import ast
 
 from fastapi import FastAPI, Request, UploadFile, HTTPException
 from typing import List
@@ -86,6 +87,21 @@ async def upload_files(request: Request):
             answer = f"Unsupported category: {category}"
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error handling category '{category}': {str(e)}")
+
+    print(type(answer))
     print(answer)
+
+    if isinstance(answer, str):
+        try:
+            parsed = ast.literal_eval(answer)
+            if isinstance(parsed, dict):
+                answer = parsed
+        except (ValueError, SyntaxError):
+            pass 
+
+    print(type(answer))
+    print(answer)
+            
     return answer
+
 
