@@ -32,7 +32,7 @@ This project automates **end-to-end data analysis** — from fetching datasets t
 
 ---
 
-## 📥 Example Request
+## Example Request
 
 ```bash
 curl "http://localhost:8000/api/" \
@@ -81,6 +81,6 @@ http://127.0.0.1:8000
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
