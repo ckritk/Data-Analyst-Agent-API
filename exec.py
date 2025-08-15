@@ -6,7 +6,7 @@ from typing import Dict, Any, Optional
 import json
 
 
-def execute_python_code(code: str, timeout: int = 120, capture_stderr: bool = True, 
+def execute_python_code(code: str, timeout: int = 50, capture_stderr: bool = True, 
                        working_directory: Optional[str] = None) -> Dict[str, Any]:
     """
     Execute Python code as a subprocess and return results or errors in a specific format.
@@ -252,3 +252,4 @@ print("Code executed successfully despite warning")
     result6 = execute_python_code(code6)
 
     print("Result:", json.dumps(result6, indent=2))
+
