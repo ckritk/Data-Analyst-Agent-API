@@ -61,6 +61,7 @@ async def upload_files(request: Request):
     if not question_text:
         raise HTTPException(status_code=400, detail="Missing required questions.txt file")
 
+    print(question_text)
     if not question_text.strip():
         raise HTTPException(status_code=400, detail="questions.txt is empty")
 
@@ -85,5 +86,6 @@ async def upload_files(request: Request):
             answer = f"Unsupported category: {category}"
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error handling category '{category}': {str(e)}")
-
+    print(answer)
     return answer
+
